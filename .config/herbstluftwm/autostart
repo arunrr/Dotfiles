@@ -43,6 +43,8 @@ hc keybind $Mod-Shift-F1 spawn polybar-msg cmd show
 hc keybind $Mod-b spawn tabbed surf -e
 ## sys-resource ##
 hc keybind $Mod-t spawn "$MyTerm" -e bashtop
+## music player ##
+hc keybind $Mod-m spawn "$MyTerm" -e ncmpcpp
 ## available keys 
 # $Mod-Shift-p
 
