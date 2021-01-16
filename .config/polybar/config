@@ -67,7 +67,7 @@ module-margin-right = 0
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans CJK HK:size=10;2"
 font-1 = "JetBrains Mono:size=16;3"
-font-2 = "Noto Color Emoji:style=Regular:pixelsize=8;1"
+font-2 = "Noto Color Emoji:pixelsize=16:style=Regular:antialias=false:scale=10;1"
 ;font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 ;font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
@@ -169,7 +169,7 @@ interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 ;   
-format-prefix = " "
+format-prefix = "🖥 "
 format-prefix-foreground = #cd1f3f
 format-underline = #645377
 
@@ -223,7 +223,7 @@ type = internal/cpu
 interval = 1
 format-foreground = #fefefe
 format-background = #8d62ad
-format-prefix = " "
+format-prefix = "🖥 "
 format-prefix-foreground = #fefefe
 
 label-font = 1
@@ -514,13 +514,13 @@ format-online-background = ${colors.background}
 [module/networkspeedup]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-;interface = wlp3s0
+interface = wlan0
 ;interface = enp14s0
 ;interface = enp0s31f6
-interface = enp3s0
+;interface = enp3s0
 label-connected = "%upspeed:7%"
 format-connected = <label-connected>
-format-connected-prefix = " "
+format-connected-prefix = "↑  "  
 format-connected-prefix-foreground = #fefefe
 format-connected-foreground = #fefefe
 format-connected-background = #8d62a9
@@ -530,13 +530,13 @@ format-connected-background = #8d62a9
 [module/networkspeeddown]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-;interface = wlp3s0
+interface = wlan0
 ;interface = enp14s0
 ;interface = enp0s31f6
-interface = enp3s0
+;interface = enp3s0
 label-connected = "%downspeed:7%"
 format-connected = <label-connected>
-format-connected-prefix = "  "
+format-connected-prefix = "  ↓ "
 format-connected-prefix-foreground = #fefefe
 format-connected-foreground = #fefefe
 format-connected-background = #8d62ad
